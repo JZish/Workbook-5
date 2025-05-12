@@ -58,6 +58,7 @@ public class SuperPerson {
 
 
 public String getStatus(){
+        // returns state of superperson
         return this.name + " has " + this.health + " health left!";
 }
 
