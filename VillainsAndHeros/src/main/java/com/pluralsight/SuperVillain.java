@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class SuperVillain extends SuperPerson{
 
-    public SuperVillian(int health, String name, int powerLevel) {
+    public SuperVillain(int health, String name, int powerLevel) {
         super(health, name);
 
         this.experiencePoints = powerLevel;
@@ -22,7 +22,7 @@ public class SuperVillain extends SuperPerson{
             System.out.println(this.name + " missed " + opponent.name);
         } else {
             opponent.takeDamage(totalDamage);
-            System.out.println(this.name + "made a hit on " + opponent.name);
+            System.out.println(this.name + " made a hit on " + opponent.name);
             opponent.takeDamage(baseDamage);
         }
 
