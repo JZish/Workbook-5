@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class AssetManagerApp {
     public static void main(String[] args) {
+
         ArrayList<Asset> assets = new ArrayList<>();
 
         // Add Houses
@@ -26,7 +27,7 @@ public class AssetManagerApp {
         // Display asset details
 
         for (Asset asset : assets) {
-            System.out.println("--------------------------------------------------");
+            System.out.println("=======================================================");
             System.out.println("Description: " + asset.getDescription());
             System.out.println("Date Acquired: " + asset.getDateAcquired());
             System.out.println("Original Cost: $" + asset.getOriginalCost());
@@ -43,7 +44,12 @@ public class AssetManagerApp {
             }
         }
 
-        System.out.println("--------------------------------------------------");
+        System.out.println("=======================================================");
+
+        //-----------------------------------------------------------------------------------------------------
+        // cash
+        Cash cash = new Cash("Emergency Fund", "2023-06-01", "1500");
+        System.out.println("Cash value: $" + cash.getValue());
 
     }
 }

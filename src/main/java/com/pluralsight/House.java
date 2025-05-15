@@ -7,8 +7,7 @@ public class House extends Asset {
     private int squareFoot;
     private int lotSize;
 
-    public House(String description, String dateAcquired, String originalCost,
-                 String address, int condition, int squareFoot, int lotSize) {
+    public House(String description, String dateAcquired, String originalCost, String address, int condition, int squareFoot, int lotSize) {
         super(description, dateAcquired, originalCost);
         this.address = address;
         this.condition = condition;
@@ -53,10 +52,18 @@ public class House extends Asset {
         double valuePerSquareFoot;
 
         switch (condition) {
-            case 1: valuePerSquareFoot = 180; break; // Excellent
-            case 2: valuePerSquareFoot = 130; break; // Good
-            case 3: valuePerSquareFoot = 90;  break; // Fair
-            case 4: valuePerSquareFoot = 80;  break; // Poor
+            case 1:
+                valuePerSquareFoot = 180;
+                break; // Excellent
+            case 2:
+                valuePerSquareFoot = 130;
+                break; // Good
+            case 3:
+                valuePerSquareFoot = 90;
+                break; // Fair
+            case 4:
+                valuePerSquareFoot = 80;
+                break; // Poor
             default:
                 valuePerSquareFoot = 90;  // Default to Fair
                 break;

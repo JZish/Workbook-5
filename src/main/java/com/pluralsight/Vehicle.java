@@ -36,8 +36,7 @@ public class Vehicle extends Asset {
         return value;
     }
 
-    public Vehicle(String description, String dateAcquired, String originalCost,
-                   String makeModel, int year, int odometer) {
+    public Vehicle(String description, String dateAcquired, String originalCost, String makeModel, int year, int odometer) {
         super(description, dateAcquired, originalCost);
         this.makeModel = makeModel;
         this.year = year;
@@ -67,4 +66,8 @@ public class Vehicle extends Asset {
     public void setOdometer(int odometer) {
         this.odometer = odometer;
     }
+
+    //@Override
+
+
 }
